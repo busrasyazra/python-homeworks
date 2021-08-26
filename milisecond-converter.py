@@ -10,3 +10,5 @@ def convert(millisecond):
     seconds = millisecond_left // 1000
 
     return f'{hours} hour/s '*(hours!=0) + f'{minutes} minute/s '*(minutes!=0) + f'{seconds} second/s '*(seconds!=0) or f'just {millisecond} millisecond/s'
+
+print(convert(60001))
